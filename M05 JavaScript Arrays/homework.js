@@ -157,6 +157,15 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   var MesesGuardados = []
+   for(var i = 0; i < array.length ; i++){
+      if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre'){
+         MesesGuardados.push(array[i]);
+         }else{
+         return 'No se encontraron los meses pedidos';
+      }
+   }
+   return MesesGuardados;
 }
  
 function tablaDelSeis() {
@@ -174,6 +183,16 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+
+   var ArregloMayor = [];
+
+   for(var i = 0; i < array.length; i++){
+      if(array[i] > 100){
+         ArregloMayor.push(array[i]);
+      }
+   }
+
+   return ArregloMayor;
    
 }
 
